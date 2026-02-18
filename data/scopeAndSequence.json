@@ -1,0 +1,197 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "name": "Level 1",
+      "subtitle": "Short Vowels + CVC",
+      "description": "Continuous consonants, short vowels, and CVC word blending",
+      "color": "from-blue-400 to-blue-600",
+      "bgColor": "bg-blue-50",
+      "borderColor": "border-blue-300",
+      "textColor": "text-blue-700",
+      "icon": "🔤",
+      "phonemeIds": [
+        "m", "s", "f", "l", "n",
+        "short-a", "short-e", "short-i", "short-o", "short-u",
+        "t", "p", "d", "b", "k"
+      ],
+      "modules": [
+        {
+          "id": "sound-drill",
+          "name": "Sound Drill",
+          "icon": "🔊",
+          "description": "Hear and practice isolated phonemes",
+          "color": "bg-sky-100 border-sky-300",
+          "instructions": "Listen to each sound and repeat it. Tap the speaker to hear again."
+        },
+        {
+          "id": "tap-the-sounds",
+          "name": "Tap the Sounds",
+          "icon": "👆",
+          "description": "Tap each box to hear phonemes in a word",
+          "color": "bg-teal-100 border-teal-300",
+          "instructions": "Tap each sound box to hear the phoneme. Then tap the word box to blend."
+        },
+        {
+          "id": "build-the-word",
+          "name": "Build the Word",
+          "icon": "🏗️",
+          "description": "Drag grapheme tiles to build words",
+          "color": "bg-amber-100 border-amber-300",
+          "instructions": "Listen to the word. Drag the letters into the boxes to build it."
+        },
+        {
+          "id": "blend-and-read",
+          "name": "Blend and Read",
+          "icon": "📖",
+          "description": "Practice blending phonemes into full words",
+          "color": "bg-green-100 border-green-300",
+          "instructions": "Move the slider to control blending speed. Slide slowly to blend the sounds."
+        },
+        {
+          "id": "minimal-pairs",
+          "name": "Minimal Pairs",
+          "icon": "👂",
+          "description": "Distinguish similar sounds",
+          "color": "bg-purple-100 border-purple-300",
+          "instructions": "Listen to the two words. Select the word you hear."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Level 2",
+      "subtitle": "Digraphs + Blends",
+      "description": "Consonant digraphs, final blends, and initial blends",
+      "color": "from-green-400 to-green-600",
+      "bgColor": "bg-green-50",
+      "borderColor": "border-green-300",
+      "textColor": "text-green-700",
+      "icon": "🔡",
+      "phonemeIds": [
+        "sh", "ch", "th-voiced", "th-voiceless",
+        "v", "g", "h", "r", "w", "j"
+      ],
+      "modules": [
+        {
+          "id": "sound-drill",
+          "name": "Sound Drill",
+          "icon": "🔊",
+          "description": "Hear and practice digraph phonemes",
+          "color": "bg-sky-100 border-sky-300",
+          "instructions": "Listen to each sound. These sounds use two letters!"
+        },
+        {
+          "id": "tap-the-sounds",
+          "name": "Tap the Sounds",
+          "icon": "👆",
+          "description": "Tap each box to hear phonemes in a word",
+          "color": "bg-teal-100 border-teal-300",
+          "instructions": "Some boxes have two letters but one sound. Tap to hear each phoneme."
+        },
+        {
+          "id": "build-the-word",
+          "name": "Build the Word",
+          "icon": "🏗️",
+          "description": "Build words with digraphs and blends",
+          "color": "bg-amber-100 border-amber-300",
+          "instructions": "Listen to the word. Drag the letter tiles (some have two letters)."
+        },
+        {
+          "id": "blend-and-read",
+          "name": "Blend and Read",
+          "icon": "📖",
+          "description": "Blend words with digraphs",
+          "color": "bg-green-100 border-green-300",
+          "instructions": "Blend these longer words using the slider."
+        },
+        {
+          "id": "minimal-pairs",
+          "name": "Minimal Pairs",
+          "icon": "👂",
+          "description": "Ship vs. chip — can you hear the difference?",
+          "color": "bg-purple-100 border-purple-300",
+          "instructions": "Listen carefully to /sh/ vs /ch/ and other close sounds."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Level 3",
+      "subtitle": "Silent E + Long Vowels",
+      "description": "Magic-e patterns and long vowel sounds",
+      "color": "from-amber-400 to-orange-500",
+      "bgColor": "bg-amber-50",
+      "borderColor": "border-amber-300",
+      "textColor": "text-amber-700",
+      "icon": "⭐",
+      "phonemeIds": [
+        "long-a", "long-e", "long-i", "long-o", "long-u"
+      ],
+      "modules": [
+        {
+          "id": "sound-drill",
+          "name": "Sound Drill",
+          "icon": "🔊",
+          "description": "Hear long vowels vs. short vowels",
+          "color": "bg-sky-100 border-sky-300",
+          "instructions": "Notice how the silent 'e' changes the vowel sound!"
+        },
+        {
+          "id": "tap-the-sounds",
+          "name": "Tap the Sounds",
+          "icon": "👆",
+          "description": "Hear long vowel sounds in magic-e words",
+          "color": "bg-teal-100 border-teal-300",
+          "instructions": "The silent e doesn't have its own box — it changes the vowel!"
+        },
+        {
+          "id": "build-the-word",
+          "name": "Build the Word",
+          "icon": "🏗️",
+          "description": "Build magic-e words",
+          "color": "bg-amber-100 border-amber-300",
+          "instructions": "Don't forget the silent e at the end!"
+        },
+        {
+          "id": "minimal-pairs",
+          "name": "Minimal Pairs",
+          "icon": "👂",
+          "description": "Short vs. long vowels: hat/hate, pin/pine",
+          "color": "bg-purple-100 border-purple-300",
+          "instructions": "Can you hear the difference? Short vowel vs. long vowel."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Level 4",
+      "subtitle": "Vowel Teams + R-Controlled",
+      "description": "Vowel teams and r-controlled vowel patterns",
+      "color": "from-purple-400 to-purple-600",
+      "bgColor": "bg-purple-50",
+      "borderColor": "border-purple-300",
+      "textColor": "text-purple-700",
+      "icon": "🌟",
+      "phonemeIds": [],
+      "modules": [
+        {
+          "id": "sound-drill",
+          "name": "Sound Drill",
+          "icon": "🔊",
+          "description": "Vowel team sounds",
+          "color": "bg-sky-100 border-sky-300",
+          "instructions": "Two vowels working together make one sound."
+        },
+        {
+          "id": "tap-the-sounds",
+          "name": "Tap the Sounds",
+          "icon": "👆",
+          "description": "Vowel teams in words",
+          "color": "bg-teal-100 border-teal-300",
+          "instructions": "Two vowel letters = one phoneme box."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "words": [
+    {
+      "id": "sat",
+      "word": "sat",
+      "phonemes": ["s", "short-a", "t"],
+      "graphemes": ["s", "a", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "map",
+      "word": "map",
+      "phonemes": ["m", "short-a", "p"],
+      "graphemes": ["m", "a", "p"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "fan",
+      "word": "fan",
+      "phonemes": ["f", "short-a", "n"],
+      "graphemes": ["f", "a", "n"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "lap",
+      "word": "lap",
+      "phonemes": ["l", "short-a", "p"],
+      "graphemes": ["l", "a", "p"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "tam",
+      "word": "tam",
+      "phonemes": ["t", "short-a", "m"],
+      "graphemes": ["t", "a", "m"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "nap",
+      "word": "nap",
+      "phonemes": ["n", "short-a", "p"],
+      "graphemes": ["n", "a", "p"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "set",
+      "word": "set",
+      "phonemes": ["s", "short-e", "t"],
+      "graphemes": ["s", "e", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "men",
+      "word": "men",
+      "phonemes": ["m", "short-e", "n"],
+      "graphemes": ["m", "e", "n"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "net",
+      "word": "net",
+      "phonemes": ["n", "short-e", "t"],
+      "graphemes": ["n", "e", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "fed",
+      "word": "fed",
+      "phonemes": ["f", "short-e", "d"],
+      "graphemes": ["f", "e", "d"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "led",
+      "word": "led",
+      "phonemes": ["l", "short-e", "d"],
+      "graphemes": ["l", "e", "d"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "ten",
+      "word": "ten",
+      "phonemes": ["t", "short-e", "n"],
+      "graphemes": ["t", "e", "n"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "sit",
+      "word": "sit",
+      "phonemes": ["s", "short-i", "t"],
+      "graphemes": ["s", "i", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "lip",
+      "word": "lip",
+      "phonemes": ["l", "short-i", "p"],
+      "graphemes": ["l", "i", "p"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "fin",
+      "word": "fin",
+      "phonemes": ["f", "short-i", "n"],
+      "graphemes": ["f", "i", "n"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "tin",
+      "word": "tin",
+      "phonemes": ["t", "short-i", "n"],
+      "graphemes": ["t", "i", "n"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "mid",
+      "word": "mid",
+      "phonemes": ["m", "short-i", "d"],
+      "graphemes": ["m", "i", "d"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "nit",
+      "word": "nit",
+      "phonemes": ["n", "short-i", "t"],
+      "graphemes": ["n", "i", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "top",
+      "word": "top",
+      "phonemes": ["t", "short-o", "p"],
+      "graphemes": ["t", "o", "p"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "mop",
+      "word": "mop",
+      "phonemes": ["m", "short-o", "p"],
+      "graphemes": ["m", "o", "p"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "lot",
+      "word": "lot",
+      "phonemes": ["l", "short-o", "t"],
+      "graphemes": ["l", "o", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "sob",
+      "word": "sob",
+      "phonemes": ["s", "short-o", "b"],
+      "graphemes": ["s", "o", "b"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "not",
+      "word": "not",
+      "phonemes": ["n", "short-o", "t"],
+      "graphemes": ["n", "o", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "fog",
+      "word": "fog",
+      "phonemes": ["f", "short-o", "g"],
+      "graphemes": ["f", "o", "g"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "sun",
+      "word": "sun",
+      "phonemes": ["s", "short-u", "n"],
+      "graphemes": ["s", "u", "n"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "mud",
+      "word": "mud",
+      "phonemes": ["m", "short-u", "d"],
+      "graphemes": ["m", "u", "d"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "fun",
+      "word": "fun",
+      "phonemes": ["f", "short-u", "n"],
+      "graphemes": ["f", "u", "n"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "tub",
+      "word": "tub",
+      "phonemes": ["t", "short-u", "b"],
+      "graphemes": ["t", "u", "b"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "nut",
+      "word": "nut",
+      "phonemes": ["n", "short-u", "t"],
+      "graphemes": ["n", "u", "t"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "dug",
+      "word": "dug",
+      "phonemes": ["d", "short-u", "g"],
+      "graphemes": ["d", "u", "g"],
+      "level": 1,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "ship",
+      "word": "ship",
+      "phonemes": ["sh", "short-i", "p"],
+      "graphemes": ["sh", "i", "p"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "chip",
+      "word": "chip",
+      "phonemes": ["ch", "short-i", "p"],
+      "graphemes": ["ch", "i", "p"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "shop",
+      "word": "shop",
+      "phonemes": ["sh", "short-o", "p"],
+      "graphemes": ["sh", "o", "p"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "thin",
+      "word": "thin",
+      "phonemes": ["th-voiceless", "short-i", "n"],
+      "graphemes": ["th", "i", "n"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "then",
+      "word": "then",
+      "phonemes": ["th-voiced", "short-e", "n"],
+      "graphemes": ["th", "e", "n"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "van",
+      "word": "van",
+      "phonemes": ["v", "short-a", "n"],
+      "graphemes": ["v", "a", "n"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "hat",
+      "word": "hat",
+      "phonemes": ["h", "short-a", "t"],
+      "graphemes": ["h", "a", "t"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "run",
+      "word": "run",
+      "phonemes": ["r", "short-u", "n"],
+      "graphemes": ["r", "u", "n"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "wet",
+      "word": "wet",
+      "phonemes": ["w", "short-e", "t"],
+      "graphemes": ["w", "e", "t"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "yet",
+      "word": "yet",
+      "phonemes": ["j", "short-e", "t"],
+      "graphemes": ["y", "e", "t"],
+      "level": 2,
+      "cvcPattern": "CVC"
+    },
+    {
+      "id": "cake",
+      "word": "cake",
+      "phonemes": ["k", "long-a"],
+      "graphemes": ["c", "a", "k", "e"],
+      "level": 3,
+      "cvcPattern": "CVCe"
+    },
+    {
+      "id": "bike",
+      "word": "bike",
+      "phonemes": ["b", "long-i", "k"],
+      "graphemes": ["b", "i", "k", "e"],
+      "level": 3,
+      "cvcPattern": "CVCe"
+    },
+    {
+      "id": "note",
+      "word": "note",
+      "phonemes": ["n", "long-o", "t"],
+      "graphemes": ["n", "o", "t", "e"],
+      "level": 3,
+      "cvcPattern": "CVCe"
+    },
+    {
+      "id": "cute",
+      "word": "cute",
+      "phonemes": ["k", "long-u", "t"],
+      "graphemes": ["c", "u", "t", "e"],
+      "level": 3,
+      "cvcPattern": "CVCe"
+    },
+    {
+      "id": "here",
+      "word": "here",
+      "phonemes": ["h", "long-e", "r"],
+      "graphemes": ["h", "e", "r", "e"],
+      "level": 3,
+      "cvcPattern": "CVCe"
+    }
+  ],
+  "minimalPairs": [
+    {
+      "id": "sat-sit",
+      "word1": "sat",
+      "word2": "sit",
+      "contrastPhoneme1": "short-a",
+      "contrastPhoneme2": "short-i",
+      "level": 1,
+      "contrastType": "vowel",
+      "spanishNote": "Both /æ/ and /ɪ/ are new sounds for Spanish speakers"
+    },
+    {
+      "id": "set-sit",
+      "word1": "set",
+      "word2": "sit",
+      "contrastPhoneme1": "short-e",
+      "contrastPhoneme2": "short-i",
+      "level": 1,
+      "contrastType": "vowel",
+      "spanishNote": "/ɛ/ vs /ɪ/ — important distinction not present in Spanish"
+    },
+    {
+      "id": "sat-set",
+      "word1": "sat",
+      "word2": "set",
+      "contrastPhoneme1": "short-a",
+      "contrastPhoneme2": "short-e",
+      "level": 1,
+      "contrastType": "vowel",
+      "spanishNote": "Both sounds are foreign to Spanish speakers"
+    },
+    {
+      "id": "top-tap",
+      "word1": "top",
+      "word2": "tap",
+      "contrastPhoneme1": "short-o",
+      "contrastPhoneme2": "short-a",
+      "level": 1,
+      "contrastType": "vowel",
+      "spanishNote": "/ɒ/ vs /æ/"
+    },
+    {
+      "id": "sun-sin",
+      "word1": "sun",
+      "word2": "sin",
+      "contrastPhoneme1": "short-u",
+      "contrastPhoneme2": "short-i",
+      "level": 1,
+      "contrastType": "vowel",
+      "spanishNote": "/ʌ/ vs /ɪ/ — both new for Spanish speakers"
+    },
+    {
+      "id": "mop-map",
+      "word1": "mop",
+      "word2": "map",
+      "contrastPhoneme1": "short-o",
+      "contrastPhoneme2": "short-a",
+      "level": 1,
+      "contrastType": "vowel",
+      "spanishNote": "Both Spanish speakers may substitute /a/ for both"
+    },
+    {
+      "id": "van-ban",
+      "word1": "van",
+      "word2": "ban",
+      "contrastPhoneme1": "v",
+      "contrastPhoneme2": "b",
+      "level": 2,
+      "contrastType": "consonant",
+      "spanishNote": "Critical: Spanish /b/ and /v/ are the same phoneme. English distinguishes them."
+    },
+    {
+      "id": "ship-chip",
+      "word1": "ship",
+      "word2": "chip",
+      "contrastPhoneme1": "sh",
+      "contrastPhoneme2": "ch",
+      "level": 2,
+      "contrastType": "consonant",
+      "spanishNote": "Spanish has /tʃ/ (ch) but not /ʃ/ (sh)"
+    },
+    {
+      "id": "thin-tin",
+      "word1": "thin",
+      "word2": "tin",
+      "contrastPhoneme1": "th-voiceless",
+      "contrastPhoneme2": "t",
+      "level": 2,
+      "contrastType": "consonant",
+      "spanishNote": "Spanish has no /θ/ — students often substitute /t/ or /s/"
+    }
+  ]
+}
