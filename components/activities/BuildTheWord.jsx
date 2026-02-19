@@ -25,6 +25,7 @@ export default function BuildTheWord({ levelId, onComplete }) {
   const [errorSlot, setErrorSlot] = useState(null); // which slot is wrong
   const [scores, setScores] = useState([]);
   const [attempts, setAttempts] = useState(0);
+  const [selectedTile, setSelectedTile] = useState(null);
   const startTimeRef = useRef(Date.now());
 
   const currentWord = words[currentIndex];
@@ -40,6 +41,7 @@ export default function BuildTheWord({ levelId, onComplete }) {
     setSlots(new Array(word.graphemes.length).fill(null));
     setErrorSlot(null);
     setAttempts(0);
+    setSelectedTile(null);
   }, []);
 
   // Set up first word on mount
@@ -210,7 +212,14 @@ export default function BuildTheWord({ levelId, onComplete }) {
           {slots.map((slot, i) => (
             <button
               key={i}
-              onClick={() => slot && removeTile(i)}
+              onClick={() => {
+                if (selectedTile !== null && !slot) {
+                  placeTile(selectedTile, i);
+                  setSelectedTile(null);
+                } else if (slot) {
+                  removeTile(i);
+                }
+              }}
               className={`
                 w-20 h-20 rounded-2xl border-3 font-bold text-xl
                 transition-all duration-200 active:scale-90 select-none
@@ -218,11 +227,13 @@ export default function BuildTheWord({ levelId, onComplete }) {
                   ? 'bg-red-100 border-red-400 text-red-600 animate-shake'
                   : slot
                   ? 'bg-blue-100 border-blue-400 text-blue-800 hover:bg-blue-200 cursor-pointer'
+                  : selectedTile !== null
+                  ? 'bg-blue-50 border-blue-400 border-dashed cursor-pointer animate-pulse'
                   : 'bg-slate-50 border-dashed border-slate-300 cursor-default'
                 }
               `}
               aria-label={slot ? `${slot.grapheme} — tap to remove` : `Empty slot ${i + 1}`}
-              disabled={phase !== 'build' || !slot}
+              disabled={phase !== 'build' || (!slot && selectedTile === null)}
             >
               {slot ? slot.grapheme : (
                 <span className="text-2xl text-slate-300">_</span>
@@ -248,8 +259,8 @@ export default function BuildTheWord({ levelId, onComplete }) {
           </p>
           <TileSelector
             tiles={tiles}
-            slots={slots}
-            onPlace={placeTile}
+            selected={selectedTile}
+            onSelect={setSelectedTile}
           />
         </div>
       )}
@@ -272,64 +283,27 @@ export default function BuildTheWord({ levelId, onComplete }) {
  * Since true drag-and-drop is complex on mobile, we use a tap-to-select
  * then tap-slot approach (simpler and more accessible).
  */
-function TileSelector({ tiles, slots, onPlace }) {
-  const [selected, setSelected] = useState(null);
-  const emptySlots = slots.map((s, i) => s === null ? i : null).filter(i => i !== null);
-
-  const handleTileClick = (tile) => {
-    setSelected(tile.id === selected ? null : tile.id);
-  };
-
-  const handleSlotClick = (slotIndex) => {
-    if (selected !== null) {
-      onPlace(selected, slotIndex);
-      setSelected(null);
-    }
-  };
-
+function TileSelector({ tiles, selected, onSelect }) {
   return (
-    <div className="space-y-4">
-      {/* Available tiles */}
-      <div className="flex justify-center gap-3 flex-wrap">
-        {tiles.map(tile => (
-          <button
-            key={tile.id}
-            onClick={() => handleTileClick(tile)}
-            className={`
-              w-16 h-16 rounded-xl border-2 font-bold text-xl
-              transition-all duration-150 active:scale-90 select-none
-              ${selected === tile.id
-                ? 'bg-blue-500 border-blue-600 text-white scale-110 shadow-lg ring-4 ring-blue-200'
-                : 'bg-white border-slate-300 text-slate-700 hover:bg-blue-50 hover:border-blue-300 shadow-sm'
-              }
-            `}
-            aria-label={`Letter ${tile.grapheme}`}
-            aria-pressed={selected === tile.id}
-          >
-            {tile.grapheme}
-          </button>
-        ))}
-      </div>
-
-      {/* Slot targets (shown when a tile is selected) */}
-      {selected !== null && emptySlots.length > 0 && (
-        <div>
-          <p className="text-center text-xs text-blue-600 font-medium mb-2">
-            Now tap which position (slot):
-          </p>
-          <div className="flex justify-center gap-3 flex-wrap">
-            {emptySlots.map(si => (
-              <button
-                key={si}
-                onClick={() => handleSlotClick(si)}
-                className="px-4 py-2 bg-blue-100 border-2 border-blue-400 rounded-xl text-blue-800 font-bold text-sm hover:bg-blue-200 active:scale-95 transition-all"
-              >
-                Slot {si + 1}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+    <div className="flex justify-center gap-3 flex-wrap">
+      {tiles.map(tile => (
+        <button
+          key={tile.id}
+          onClick={() => onSelect(tile.id === selected ? null : tile.id)}
+          className={`
+            w-16 h-16 rounded-xl border-2 font-bold text-xl
+            transition-all duration-150 active:scale-90 select-none
+            ${selected === tile.id
+              ? 'bg-blue-500 border-blue-600 text-white scale-110 shadow-lg ring-4 ring-blue-200'
+              : 'bg-white border-slate-300 text-slate-700 hover:bg-blue-50 hover:border-blue-300 shadow-sm'
+            }
+          `}
+          aria-label={`Letter ${tile.grapheme}`}
+          aria-pressed={selected === tile.id}
+        >
+          {tile.grapheme}
+        </button>
+      ))}
     </div>
   );
 }
