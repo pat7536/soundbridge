@@ -8,7 +8,7 @@
  * ────────────────────────────────────────────────────────────────
  */
 import { useState, useCallback, useRef } from 'react';
-import { playPhoneme, playWord, blendPhonemes, sliderToGap } from '@/lib/audioEngine';
+import { playPhoneme, playWord, blendPhonemes, sliderToGap, unlockSpeech } from '@/lib/audioEngine';
 import { useApp } from '@/context/AppContext';
 import ProgressBar from '@/components/ui/ProgressBar';
 import AudioButton from '@/components/ui/AudioButton';
@@ -46,6 +46,7 @@ export default function TapTheSounds({ levelId, onComplete }) {
 
   const handleBlend = useCallback(async () => {
     if (!currentWord) return;
+    unlockSpeech(); // iOS: must call speechSynthesis synchronously within user gesture
     setPhase('blending');
 
     // Play segmented then blended

@@ -9,7 +9,7 @@
  * ────────────────────────────────────────────────────────────────
  */
 import { useState, useCallback, useRef } from 'react';
-import { blendPhonemes, playWord, sliderToGap, cancelBlending } from '@/lib/audioEngine';
+import { blendPhonemes, playWord, sliderToGap, cancelBlending, unlockSpeech } from '@/lib/audioEngine';
 import { useApp } from '@/context/AppContext';
 import ProgressBar from '@/components/ui/ProgressBar';
 
@@ -42,6 +42,7 @@ export default function BlendAndRead({ levelId, onComplete }) {
 
   const handleBlend = useCallback(async () => {
     if (!currentWord || isPlaying) return;
+    unlockSpeech(); // iOS: must call speechSynthesis synchronously within user gesture
     setIsPlaying(true);
     setActivePhoneme(null);
 
