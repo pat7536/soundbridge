@@ -49,9 +49,7 @@ export default function SoundDrill({ levelId, onComplete }) {
 
     setSessionResults(prev => [...prev, { phonemeId: current.id, rating }]);
 
-    if (rating === 'got-it') {
-      showFeedback({ type: 'correct', message: `Great! You said //${current.ipa}// correctly!` });
-    } else {
+    if (rating !== 'got-it') {
       showFeedback({
         type: 'hint',
         message: `Listen again and try once more.`,
