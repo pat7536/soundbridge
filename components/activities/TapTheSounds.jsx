@@ -14,7 +14,7 @@ import ProgressBar from '@/components/ui/ProgressBar';
 import AudioButton from '@/components/ui/AudioButton';
 
 export default function TapTheSounds({ levelId, onComplete }) {
-  const { getWordsForLevel, getPhonemeById, blendSpeed, recordTrial, showFeedback } = useApp();
+  const { getWordsForLevel, getPhonemeById, blendSpeed, recordTrial } = useApp();
 
   const allWords = getWordsForLevel(levelId);
   // Use a shuffled subset of 8 words
@@ -64,8 +64,7 @@ export default function TapTheSounds({ levelId, onComplete }) {
     const elapsed = Date.now() - startTimeRef.current;
     setScores(prev => [...prev, true]);
     currentWord.phonemes.forEach(pid => recordTrial(pid, true, elapsed));
-    showFeedback({ type: 'correct', message: `${currentWord.word} — excellent blending! 🎉` });
-  }, [currentWord, blendSpeed, recordTrial, showFeedback]);
+  }, [currentWord, blendSpeed, recordTrial]);
 
   const handleNext = useCallback(() => {
     if (isLast) {
